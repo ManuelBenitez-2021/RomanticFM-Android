@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/colorAccent"
+        >
+
+
+
+        <ImageView
+
+            android:layout_width="@dimen/_40sdp"
+            android:id="@+id/img_back"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_icon"
+            android:padding="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Romantic FM Video"
+            android:textColor="@color/white"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:textSize="@dimen/_16sdp"
+
+            style="@style/CustomTextAppearance.Regular"
+            />
+
+
+
+    </RelativeLayout>
+
+  <!--  <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/progress_bar"
+        >-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_above="@+id/progress_bar"
+
+
+
+            />
+
+  <!--  </android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_centerHorizontal="true"
+
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

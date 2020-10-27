@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+           android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            >
+<FrameLayout
+    android:id="@+id/fl_main"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+
+    >
+
+    <tcking.github.com.rfm.aacplay.pager.LoopViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="bottom"
+      />
+
+</FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_latest_vid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+android:visibility="gone"
+        android:layout_below="@+id/fl_main"
+
+
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_latest_vid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Romantic FM Video"
+            android:textSize="@dimen/_14sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/blue"
+            style="@style/CustomTextAppearance.Regular"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            >
+
+
+
+
+        <TextView
+            android:id="@+id/tv_video_see_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mai multe"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/next"
+            style="@style/CustomTextAppearance.Semibold"
+            android:layout_toLeftOf="@+id/img_more"
+           android:padding="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            />
+
+            <ImageView
+                android:id="@+id/img_more"
+                android:layout_width="@dimen/_7sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/icon_triangle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_below="@+id/txt_latest_vid"
+            android:id="@+id/rv_latest_videos"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_205sdp"
+
+            />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fl_main"
+
+
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+
+                android:background="@color/white"
+
+                >
+
+                <TextView
+                    android:id="@+id/txt_new_capital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mai multe"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+                    style="@style/CustomTextAppearance.Regular"
+                    android:padding="@dimen/_13sdp"
+                    android:background="@color/grey"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+
+                    android:layout_below="@+id/txt_new_capital"
+                    android:id="@+id/rv_new_on_capital"
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_see_more"
+                    android:layout_below="@+id/rv_new_on_capital"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:text="Mai multe"
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:textSize="@dimen/_16sdp"
+                    android:background="@color/grey"
+                    style="@style/CustomTextAppearance.Regular"
+                    />
+
+
+            </RelativeLayout>
+
+</RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

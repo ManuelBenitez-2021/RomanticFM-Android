@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_145sdp"
+            android:layout_weight=".55"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+
+                android:text="Lorem ipsum dolor sit amet, jsb hsb jhsb jssh js jhs jh hsb jhs hs jsconsectetuer adipis hg gjh jh h j jh jh jh h"
+                style="@style/CustomTextAppearance.Regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+
+                android:ellipsize="end"
+                android:maxLines="5"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+
+                android:text="3 days ago"
+                style="@style/CustomTextAppearance.Regular"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:visibility="gone"
+
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_145sdp"
+            android:layout_weight=".45"
+            >
+
+            <ImageView
+                android:id="@+id/img_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/play_button"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/grey"
+        />
+
+</LinearLayout>

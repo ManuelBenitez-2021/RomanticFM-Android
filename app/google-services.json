@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "1028681360931",
+    "firebase_url": "https://romantic-fm-d9ad6.firebaseio.com",
+    "project_id": "romantic-fm-d9ad6",
+    "storage_bucket": "romantic-fm-d9ad6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028681360931:android:79fcfe87de057212",
+        "android_client_info": {
+          "package_name": "com.rfm.aacplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028681360931-k2kt5q1qmf1153s47k9vqe3j9pbeolki.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rfm.aacplay",
+            "certificate_hash": "b69a43f759a911530c9a8c9fa440ed274f068730"
+          }
+        },
+        {
+          "client_id": "1028681360931-4kc26h46smb7ps1792nvtog5p8glc5nr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rfm.aacplay",
+            "certificate_hash": "34eb6b759b7155a7e5b18cef895b7c5296c5b153"
+          }
+        },
+        {
+          "client_id": "1028681360931-3p23uhl68jghsqhutvnngbbs5blm61jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzBnbswDuXK0CF9JMmT7FPXyINWyXJkr8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028681360931-3p23uhl68jghsqhutvnngbbs5blm61jc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1028681360931-7p8rfkjmlm3ol83jjlts4fu1tm87q56f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rfm.aacplay"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

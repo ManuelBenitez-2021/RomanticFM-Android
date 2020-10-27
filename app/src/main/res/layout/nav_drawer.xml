@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/img_artist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/noti_image"
+        android:background="@color/white"
+
+        android:alpha=".3"
+        android:visibility="gone"
+
+        />
+
+
+
+    <LinearLayout
+
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_live_video"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+
+            >
+
+            <ImageView
+                android:id="@+id/img_video"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/video_icon"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_toRightOf="@+id/img_video"
+                android:text="Ascultă Romantic FM"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                style="@style/CustomTextAppearance.Regular"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_news"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+
+            >
+
+            <ImageView
+                android:id="@+id/img_msg"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/img_text"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_toRightOf="@+id/img_msg"
+                android:text="Știri"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                style="@style/CustomTextAppearance.Regular"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+
+            >
+
+            <ImageView
+                android:id="@+id/img_settings"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/img_settings"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_toRightOf="@+id/img_settings"
+                android:text="Oprire Programată"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                style="@style/CustomTextAppearance.Regular"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_notification"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/layout_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_noti"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_settings"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_noti"
+                    android:textColor="@color/white"
+                    android:text="Notificări"
+                    android:textSize="@dimen/_14sdp"
+                    style="@style/CustomTextAppearance.Regular"
+                    android:textStyle="bold"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+            <!-- <Switch
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                 android:layout_centerVertical="true"
+                 android:layout_marginRight="@dimen/_10sdp"
+                 />-->
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:sb_checked="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60sdp"
+            >
+
+            <ImageView
+                android:id="@+id/img_fb"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/icon_fb"
+
+                android:layout_toLeftOf="@+id/img_yt"
+                android:layout_marginRight="@dimen/_20sdp"
+
+                android:layout_centerInParent="true"
+                />
+
+
+            <ImageView
+                android:id="@+id/img_yt"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+android:src="@drawable/icon_yt"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:id="@+id/img_ig"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/icon_ig"
+
+                android:layout_toRightOf="@+id/img_yt"
+                android:layout_marginLeft="@dimen/_20sdp"
+
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

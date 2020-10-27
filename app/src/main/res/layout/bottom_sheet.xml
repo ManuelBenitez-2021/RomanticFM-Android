@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300sdp"
+    android:background="#fff"
+    android:orientation="vertical"
+
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="@dimen/_60sdp"
+
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+
+            android:background="@color/colorPrimary"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_75sdp"
+                >
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACUM"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone"
+                    style="@style/CustomTextAppearance.Regular"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/img_microphone"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/microfone_icon"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/img_microphone"
+
+                    android:gravity="center_vertical"
+                    >
+                <com.lb.auto_fit_textview.AutoResizeTextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Muzică, nu zgomot"
+                    android:textColor="@color/white"
+                    style="@style/CustomTextAppearance.Regular"
+                    android:textSize="@dimen/_9sdp"
+
+                    android:padding="@dimen/_1sdp"
+
+                    android:singleLine="true"
+
+                    android:visibility="gone"
+
+
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
+
+                    />
+
+
+
+
+                <com.lb.auto_fit_textview.AutoResizeTextView
+
+                    android:id="@+id/txt_song_name"
+                    android:layout_below="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Muzică, nu zgomot"
+                    android:textColor="@color/white"
+                    style="@style/CustomTextAppearance.Regular"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_toRightOf="@+id/img_microphone"
+                    android:padding="@dimen/_1sdp"
+                    android:singleLine="true"
+                    android:visibility="gone"
+
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
+                    />
+
+                </LinearLayout>
+                <com.lb.auto_fit_textview.AutoResizeTextView
+                    android:id="@+id/txt_song_title_name"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Muzică, nu zgomot"
+                    android:textColor="@color/white"
+
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_toRightOf="@+id/img_microphone"
+                    android:padding="@dimen/_4sdp"
+                    style="@style/CustomTextAppearance.Regular"
+
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
+                    />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_play"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:padding="@dimen/_1sdp"
+                android:src="@drawable/play_button"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/img_pause"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:padding="@dimen/_1sdp"
+                android:src="@drawable/pause_button"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_240sdp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_last_songs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_audio_video"
+                android:visibility="visible"
+                />
+
+            <TextView
+
+                android:id="@+id/txt_no_song_yet"
+                style="@style/CustomTextAppearance.Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:textSize="@dimen/_16sdp"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="No Previous songs yet"
+                android:textColor="@color/blue"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

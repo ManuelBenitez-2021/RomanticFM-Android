@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_main"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="match_parent"
+        android:src="@drawable/new_logo"
+        android:layout_centerInParent="true"
+
+
+        />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_main"-->
+        <!--android:layout_width="@dimen/_150sdp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/upper_image_1"-->
+        <!--android:layout_centerInParent="true"-->
+
+
+        <!--/>-->
+
+    <ImageView
+        android:id="@+id/img_main_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash_two"
+        android:scaleType="centerCrop"
+
+        android:visibility="gone"
+
+        />
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/live_button"
+
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_20sdp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16sdp"
+        android:text="Name of Radio Show \n Time Interval of show"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:gravity="center"
+        android:visibility="gone"
+        style="@style/CustomTextAppearance.Regular"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_on_air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON AIR"
+        android:textColor="@color/white"
+        android:background="@color/maroon"
+        android:padding="@dimen/_5sdp"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        android:layout_margin="@dimen/_5sdp"
+
+        style="@style/CustomTextAppearance.Regular"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="wrap_content"
+        android:text="Ant Payne\n12pm - 3pm"
+        android:textColor="@color/white"
+
+        android:background="@color/colorPrimary"
+
+        android:layout_alignParentBottom="true"
+
+        android:gravity="left"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:visibility="gone"
+
+        android:alpha=".85"
+
+
+        style="@style/CustomTextAppearance.Regular"
+
+        />
+
+
+</RelativeLayout>

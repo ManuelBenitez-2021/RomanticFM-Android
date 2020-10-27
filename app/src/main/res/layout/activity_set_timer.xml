@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aigestudio="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/_2sdp"
+        android:weightSum="1">
+
+
+
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/hour_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ffffff"
+            android:gravity="center"
+            aigestudio:wheel_visible_item_count="3"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight=".2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Ore"
+            android:textColor="@color/black"
+            style="@style/CustomTextAppearance.Regular"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/minute_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:background="#ffffff"
+            android:gravity="center"
+            aigestudio:wheel_curved="false"
+            aigestudio:wheel_item_text_color="#A7A7DB"
+            aigestudio:wheel_item_text_size="24sp"
+            aigestudio:wheel_selected_item_text_color="#536D8A"
+            aigestudio:wheel_visible_item_count="3" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight=".2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Minute"
+            style="@style/CustomTextAppearance.Regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_set_timer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_30sdp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Setează"
+        style="@style/CustomTextAppearance.Regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
